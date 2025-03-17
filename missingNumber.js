@@ -12,6 +12,31 @@
 // let n=4;
 // console.log(MissingNumber(arr,n));
 //  If numbers have a custom range, use min/max sum formula.
+
+
+
+
+// java
+// public int missingNumber(int[] nums) {
+//     int n = nums.length;
+    
+//     // Calculate the expected sum of numbers from 0 to n
+//     int expectedSum = n * (n + 1) / 2;
+    
+//     // Calculate the sum of the numbers in the array
+//     int actualSum = 0;
+//     for (int num : nums) {
+//         actualSum += num;
+//     }
+    
+//     // The missing number is the difference between expected and actual sums
+//     return expectedSum - actualSum;
+// }
+
+
+
+
+
 function findAllMissingNumbers(arr, n) {
     let min = Math.min(...arr);
     let max = Math.max(...arr);
